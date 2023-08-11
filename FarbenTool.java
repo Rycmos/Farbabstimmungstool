@@ -251,7 +251,7 @@ public class FarbenTool implements ActionListener { // Die Klasse 'Farbentool' w
         return value >= 0 && value <= 255;
     } 
     /*  Die Methode 'isValidColorValue()' wird definiert. Dieser wird ein Wert eingegeben, in diesem Fall der jeweilige Farbwert, der dann zwischen größer gleich 0 und kleiner gleich 255 sein muss.
-     * */
+      */
       
     private void calculateAndShowComplementaryColor(Hauptfarbe mainColor) { //Die Methode, die verwendet wird um die Komplementärfarbe zu berechnen und anzuzeigen, wird definiert. 
         Komplementaerfarbe complementColor = new Komplementaerfarbe(mainColor); //Ein 'Komplementaerfarbe'-Objekt mit 'mainColor' als Parameter wird erstellt. Dadurch wird die Komplementärfarbe zur 'mainColor' berechnet. 
@@ -281,7 +281,7 @@ public class FarbenTool implements ActionListener { // Die Klasse 'Farbentool' w
         lblComplementColorCode.setText("Farbcode (Komplementärfarbe): R:" + complementColor.getComplementColor().getRed() + " G:" + complementColor.getComplementColor().getGreen() + " B:" + complementColor.getComplementColor().getBlue());
         /* Die Label 'lblMainColorCode' und 'lblComplementColorCode' werden aktualisiert, damit die RGB-Werte hinter den entsprechenden Textfeldern passend sind. Der text wird dabei durch die Kombination aus Textfeldern und den Farbwerten 
            erzeugt. Dafür werden die vorher definierten Methoden genutzt. 
-         * */
+          */
     }
 
 
@@ -298,7 +298,7 @@ public class FarbenTool implements ActionListener { // Die Klasse 'Farbentool' w
                 new FarbenTool();
             }
         }); /* Die Anwendung wird initialisiert und gestartet, indem eine Instanz der Klasse 'FarbenTool' erzeugt wird. 
-        Die Main-Methode startet das Farben-Tool in dem die Anwendung initialisiert und das Fenster angezeigt wird. Das 'SwingUtilities.invokeLater()' stellt sicher, dass der Swing-Code richtig ausgegeführt wird und um Probleme mit der Benutzeroberfläche (dem GUI) zu vermeiden. 
+               Die Main-Methode startet das Farben-Tool in dem die Anwendung initialisiert und das Fenster angezeigt wird. Das 'SwingUtilities.invokeLater()' stellt sicher, dass der Swing-Code richtig ausgegeführt wird und um Probleme mit der Benutzeroberfläche (dem GUI) zu vermeiden. 
          		
          	*/
     }
